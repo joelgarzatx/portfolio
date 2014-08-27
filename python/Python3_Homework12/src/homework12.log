@@ -1,0 +1,16 @@
+2014-04-27 13:28:13,987 - root - INFO - Creating a new address
+2014-04-27 13:28:14,013 - root - INFO - Creating a new address
+2014-04-27 13:28:14,016 - root - ERROR - STATE exception
+2014-04-27 13:28:14,016 - root - INFO - Updating State value
+2014-04-27 13:28:14,017 - root - INFO - Creating a new address
+2014-04-27 13:28:14,019 - root - ERROR - ZIPCODE exception
+2014-04-27 13:28:14,019 - root - INFO - Updating Zip Code value
+2014-04-27 13:32:30,578 - root - INFO - Updating State value
+2014-04-27 13:32:30,605 - root - INFO - Updating Zip Code value
+2014-04-27 13:32:30,605 - root - INFO - Creating a new address
+2014-04-27 13:32:39,325 - root - INFO - Updating State value
+2014-04-27 13:32:39,351 - root - ERROR - ZIPCODE exception
+2014-04-27 13:32:59,671 - root - ERROR - STATE exception
+2014-04-27 13:33:20,467 - root - INFO - Updating State value
+2014-04-27 13:33:20,493 - root - INFO - Updating Zip Code value
+2014-04-27 13:33:20,493 - root - INFO - Creating a new address

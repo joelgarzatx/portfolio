@@ -1,0 +1,7 @@
+2014-04-24 15:28:53,446 - INFO - __init__ - Creating a new address
+2014-04-24 15:28:53,476 - INFO - __init__ - Creating a new address
+2014-04-24 15:28:53,476 - ERROR - state - STATE exception
+2014-04-24 15:28:53,476 - INFO - state - Updating State value
+2014-04-24 15:28:53,476 - INFO - __init__ - Creating a new address
+2014-04-24 15:28:53,476 - ERROR - zip_code - ZIPCODE exception
+2014-04-24 15:28:53,476 - INFO - zip_code - Updating Zip Code value
