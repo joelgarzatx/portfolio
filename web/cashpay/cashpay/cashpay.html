@@ -3,66 +3,102 @@
   <head>
     <title>Cashpay - Denominationator</title>
     <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <link rel="stylesheet" href="cashpay.css">
     <script type="text/javascript" src="js/cashpay.js"></script>
 
+
   </head>
 
-  <body>
-    <h1>Cashpay - Denominationator</h1>
-    <h3>Enter data</h3>
-    <form id="data">
-      <label for="amount">Amount: </label>
-      <input type="text" id="amount" size="20">
-      <br/>
-      <label for="note">Note: </label>
-      <input type="text" id="note" size="40">
-      <p>
-        <input type="button" id="generateButton" value="Add to Items" />
-        <input type="button" id="clearButton" value="Clear" />
-      </p>
-    </form>
-    <h3>Items</h3>
-    <ol id="list">
+  <body role="document">
+    <div class="container theme-showcase" role="main">
+	    <div class="jumbotron">
+		    <h1>Cashpay</h1>
+		    <h2>Denominationator</h2>
+		    <div class="panel panel-info">
+		        <div class="panel-heading">
+					<h3>Enter your amount and a note</h3>
+			    </div>
+			    <div class="panel-body">
+			        <p>
+			            Do not use group separators or currency symbols in your amount. Example: $1,234.56 should be entered as 1234.56
+			        </p>
+				    <form id="data" role="form">
+				        <div class="form-group">
+						    <label for="amount">Amount: </label>
+						    <input type="text" class="form-control" id="amount" size="20">
+						</div>
+						<div class="form-group">
+						    <label for="note">Note: </label>
+						    <input type="text" class="form-control" id="note" size="40">
+						</div>
+				      <p>
+				        <input type="button" role="button" class="btn btn-lg btn-primary" id="generateButton" value="Add to Items" />
+				        <input type="button" role="button" class="btn btn-lg btn-danger" id="clearButton" value="Clear" />
+				      </p>
+				    </form>
+				</div>
+		    </div>
+	    </div>
 
-    </ol>
+	    <div class="page-header">
+		    <h3>Items</h3>
+		    <ol class="list-group" id="list"></ol>
+	    </div>
 
-    <h3>Totals</h3>
-    <table>
-      <tr>
-        <td> $100 x </td>  <td> <div id="Hundred">0</div> </td>
-      </tr>
-      <tr>
-        <td> $50 x </td>  <td> <div id="Fifty">0</div> </td>
-      </tr>
-      <tr>
-        <td> $20 x </td>  <td> <div id="Twenty">0</div> </td>
-      </tr>
-      <tr>
-        <td> $10 x </td>  <td> <div id="Ten">0</div> </td>
-      </tr>
-      <tr>
-        <td> $5 x </td>  <td> <div id="Five">0</div> </td>
-      </tr>
-      <tr>
-        <td> $1 x </td>  <td> <div id="One">0</div> </td>
-      </tr>
-      <tr>
-        <td> $0.25 x </td>  <td> <div id="Quarter">0</div> </td>
-      </tr>
-      <tr>
-        <td> $0.10 x </td>  <td> <div id="Dime">0</div> </td>
-      </tr>
-      <tr>
-        <td> $0.05 x </td>  <td> <div id="Nickel">0</div> </td>
-      </tr>
-      <tr>
-        <td> $0.01 x </td>  <td> <div id="Penny">0</div> </td>
-      </tr>
+	    <div class="page-header">
+		    <h3>Totals</h3>
+		    <table class="table table-striped">
+		      <tr>
+		        <td > $100 x <span id="Hundred">0</span></td>
+		      </tr>
+		      <tr>
+		        <td > $50 x <span id="Fifty">0</span> </td>
+		      </tr>
+		      <tr>
+		        <td > $20 x <span id="Twenty">0</span> </td>
+		      </tr>
+		      <tr>
+		        <td > $10 x <span  id="Ten">0</span> </td>
+		      </tr>
+		      <tr>
+		        <td > $5 x <span  id="Five">0</span> </td>
+		      </tr>
+		      <tr>
+		        <td > $1 x <span  id="One">0</span> </td>
+		      </tr>
+		      <tr>
+		        <td > $0.25 x <span  id="Quarter">0</span> </td>
+		      </tr>
+		      <tr>
+		        <td > $0.10 x <span  id="Dime">0</span> </td>
+		      </tr>
+		      <tr>
+		        <td > $0.05 x <span  id="Nickel">0</span> </td>
+		      </tr>
+		      <tr>
+		        <td > $0.01 x <span  id="Penny">0</span> </td>
+		      </tr>
+		    </table>
+	    </div>
 
-
-    </table>
-
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="js/bootstrap.min.js"></script>
+    </div>
   </body>
 
 </html>

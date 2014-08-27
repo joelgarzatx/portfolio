@@ -44,6 +44,7 @@ function generate(){
 		alert('Please enter a valid payment amount');
 		return;
 	}
+    amount = parseFloat(amount);
     
     // create a payNode object and calculate the breakdown
     var payNode = new PayNode(amount, note);
@@ -52,7 +53,7 @@ function generate(){
 
     // maintain list of items entered
     var pay_li = document.createElement("li");
-    pay_li.setAttribute("class","payment_node");
+    pay_li.setAttribute("class","list-group-item");
     pay_li.setAttribute("id", counter);
     pay_li.textContent = "$" + amount + ", " + note;   
     var theList = document.getElementById("list");
