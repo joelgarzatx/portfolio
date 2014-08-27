@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cashpay - Denominationator</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="cashpay.css">
+    <script type="text/javascript" src="js/cashpay.js"></script>
+
+  </head>
+
+  <body>
+    <h1>Cashpay - Denominationator</h1>
+    <h3>Enter data</h3>
+    <form id="data">
+      <label for="amount">Amount: </label>
+      <input type="text" id="amount" size="20">
+      <br/>
+      <label for="note">Note: </label>
+      <input type="text" id="note" size="40">
+      <p>
+        <input type="button" id="generateButton" value="Add to Items" />
+        <input type="button" id="clearButton" value="Clear" />
+      </p>
+    </form>
+    <h3>Items</h3>
+    <ol id="list">
+
+    </ol>
+
+    <h3>Totals</h3>
+    <table>
+      <tr>
+        <td> $100 x </td>  <td> <div id="Hundred">0</div> </td>
+      </tr>
+      <tr>
+        <td> $50 x </td>  <td> <div id="Fifty">0</div> </td>
+      </tr>
+      <tr>
+        <td> $20 x </td>  <td> <div id="Twenty">0</div> </td>
+      </tr>
+      <tr>
+        <td> $10 x </td>  <td> <div id="Ten">0</div> </td>
+      </tr>
+      <tr>
+        <td> $5 x </td>  <td> <div id="Five">0</div> </td>
+      </tr>
+      <tr>
+        <td> $1 x </td>  <td> <div id="One">0</div> </td>
+      </tr>
+      <tr>
+        <td> $0.25 x </td>  <td> <div id="Quarter">0</div> </td>
+      </tr>
+      <tr>
+        <td> $0.10 x </td>  <td> <div id="Dime">0</div> </td>
+      </tr>
+      <tr>
+        <td> $0.05 x </td>  <td> <div id="Nickel">0</div> </td>
+      </tr>
+      <tr>
+        <td> $0.01 x </td>  <td> <div id="Penny">0</div> </td>
+      </tr>
+
+
+    </table>
+
+  </body>
+
+</html>

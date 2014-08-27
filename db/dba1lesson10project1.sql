@@ -1,0 +1,10 @@
+SELECT A.Title, 
+  SUM(CASE WHEN EXTRACT(QUARTER FROM P.DateOfPurchase) = '1' THEN 1 ELSE 0 END) AS 'Q1', 
+  SUM(CASE WHEN EXTRACT(QUARTER FROM P.DateOfPurchase) = '2' THEN 1 ELSE 0 END) AS 'Q2',
+  SUM(CASE WHEN EXTRACT(QUARTER FROM P.DateOfPurchase) = '3' THEN 1 ELSE 0 END) AS 'Q3',
+  SUM(CASE WHEN EXTRACT(QUARTER FROM P.DateOfPurchase) = '4' THEN 1 ELSE 0 END) AS 'Q4' 
+FROM Albums as A
+JOIN Songs as S on (A.AlbumID = S.AlbumID)
+JOIN Purchases as P on (S.SongID = P.SongID)
+GROUP BY A.Title
+;

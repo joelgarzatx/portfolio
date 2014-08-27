@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE PHONEBOOK>
+<PHONEBOOK>
+    <LISTING id="1">
+       <FIRST>John</FIRST>
+       <LAST>Smith</LAST>
+       <PHONE>1-800-123-4567</PHONE>
+       <ADDRESS>1700 S 10th Street, McAllen, TX</ADDRESS>
+       <EMAIL>john@smith.com</EMAIL>
+       <IMAGE>../javascript1/images/Pickles.jpg</IMAGE>
+    </LISTING>
+    <LISTING id="2">
+       <FIRST>Jane</FIRST>
+       <LAST>Smythe</LAST>
+       <PHONE>1-800-234-5678</PHONE>
+       <ADDRESS>1401 E Jackson Avenue, McAllen, TX</ADDRESS>
+       <EMAIL>jane@smith.com</EMAIL>
+       <IMAGE>../javascript1/images/Tilla.jpg</IMAGE>
+    </LISTING>
+    <LISTING id="3">
+       <FIRST>Will</FIRST>
+       <LAST>Jones</LAST>
+       <PHONE>1-800-456-7890</PHONE>
+       <ADDRESS>3509 N 10 St, McAllen, TX</ADDRESS>
+       <EMAIL>freshprince@smith.com</EMAIL>
+       <IMAGE>../javascript1/images/BreakingWave.jpg</IMAGE>
+    </LISTING>
+    <LISTING id="4">
+       <FIRST>Frank</FIRST>
+       <LAST>Jackson</LAST>
+       <PHONE>1-800-234-5679</PHONE>
+       <ADDRESS>3600 Nolana, McAllen, TX</ADDRESS>
+       <EMAIL>frank@smith.com</EMAIL>
+       <IMAGE>../javascript1/images/CloudsAndSea.jpg</IMAGE>
+    </LISTING>
+    <LISTING id="5">
+       <FIRST>Betty</FIRST>
+       <LAST>Hudson</LAST>
+       <PHONE>1-800-456-7891</PHONE>
+       <ADDRESS>2427 E US Expy 83, Mission, TX</ADDRESS>
+       <EMAIL>betty@smith.com</EMAIL>
+       <IMAGE>../javascript1/images/Graveyard.jpg</IMAGE>
+    </LISTING>
+</PHONEBOOK>

@@ -1,0 +1,30 @@
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 1776665
+Server version: 5.1.71-log Source distribution
+
+Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> set sql_mode='traditional';
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SELECT A.ArtistID, A.ArtistName, A.BandWebURL, B.AlbumID, B.Title, B.YearReleased, B.Rating, B.NumberOfSongs
+    -> FROM Artists as A
+    -> JOIN Albums as B on (A.ArtistID = B.ArtistID);
++----------+----------------+-----------------------------+---------+----------------------+--------------+--------+---------------+
+| ArtistID | ArtistName     | BandWebURL                  | AlbumID | Title                | YearReleased | Rating | NumberOfSongs |
++----------+----------------+-----------------------------+---------+----------------------+--------------+--------+---------------+
+|        1 | Bob Dylan      | www.bobdylan.com            |       1 | Blonde on Blonde     |         1966 |      5 |            14 |
+|        2 | Johnny Cash    | www.johnnycash.com          |       2 | Man in Black         |         1971 |      5 |            10 |
+|        3 | The Beatles    | www.thebeatles.com          |       3 | Let It Be            |         1970 |      5 |            15 |
+|        4 | Rolling Stones | www.rollingstones.com       |       4 | Let It Bleed         |         1979 |      5 |             9 |
+|        5 | The Time Lords | http://youtu.be/bdTELokKfCk |       5 | Doctorin' the Tardis |         1988 |      5 |             1 |
++----------+----------------+-----------------------------+---------+----------------------+--------------+--------+---------------+
+5 rows in set (0.00 sec)
+
+mysql> exit
